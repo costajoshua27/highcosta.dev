@@ -28,12 +28,6 @@ export default function Perspective({
       <animated.div
         style={{ 
           transform: props.xys.to(translate),
-          width: '20ch',
-          height: '20ch',
-          background: 'hotpink',
-          borderRadius: '5px',
-          transition: 'box-shadow 0.5s',
-          willChange: 'transform'
         }}
         onMouseLeave={() => set([0, 0, 1])}
         onMouseMove={(e) => {
